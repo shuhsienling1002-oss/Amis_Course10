@@ -48,7 +48,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# --- 1. 數據資料庫 (Unit 10 專屬) ---
+# --- 1. 數據資料庫 (Unit 10 修正版) ---
 
 # 單字：家與家具 (全部小寫)
 VOCABULARY = {
@@ -56,7 +56,7 @@ VOCABULARY = {
     "panan":      {"zh": "門", "emoji": "🚪", "file": "u10_panan"},
     "sasingaran": {"zh": "窗戶", "emoji": "🪟", "file": "u10_sasingaran"},
     "anengan":    {"zh": "椅子/座位", "emoji": "🪑", "file": "u10_anengan"},
-    "takar":      {"zh": "桌子/平台", "emoji": "🛋️", "file": "u10_takar"},
+    "takar":      {"zh": "床鋪/竹藤床", "emoji": "🛏️", "file": "u10_takar"},
     "tilifi":     {"zh": "電視", "emoji": "📺", "file": "u10_tilifi"}
 }
 
@@ -64,7 +64,7 @@ VOCABULARY = {
 SENTENCES = [
     {"amis": "I cowa kiso?", "zh": "你在哪裡？", "file": "u10_q_where_are_you"},
     {"amis": "I loma' kako.", "zh": "我在家。", "file": "u10_s_im_at_home"},
-    {"amis": "Pifaho to panan.", "zh": "把門打開。", "file": "u10_s_open_door"}
+    {"amis": "Pifohat to panan.", "zh": "把門打開。", "file": "u10_s_open_door"}
 ]
 
 # --- 1.5 智慧語音核心 ---
@@ -184,7 +184,7 @@ def show_quiz_mode():
         
         st.markdown("<div style='font-size:80px; text-align:center;'>🚪</div>", unsafe_allow_html=True)
         
-        options = ["O panan (是門)", "O takar (是桌子)", "O tilifi (是電視)"]
+        options = ["O panan (是門)", "O takar (是床鋪)", "O tilifi (是電視)"]
         choice = st.radio("請選擇：", options)
         
         if st.button("確定送出"):
